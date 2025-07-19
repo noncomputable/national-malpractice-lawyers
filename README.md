@@ -1,60 +1,90 @@
-# Next.js Framework Starter
+# National Malpractice Lawyers Website
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/templates/tree/main/next-starter-template)
+A professional website for Peter Anderson, nationwide medical malpractice attorney.
 
-<!-- dash-content-start -->
+## About Peter Anderson
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). It's deployed on Cloudflare Workers as a [static website](https://developers.cloudflare.com/workers/static-assets/).
+Peter Anderson is a medical malpractice attorney with over 15 years of experience representing victims of medical negligence. He handles cases nationwide.
 
-<!-- dash-content-end -->
+**Contact:** peter@nationalmalpracticelawyers.com
 
-Outside of this repo, you can start a new project with this template using [C3](https://developers.cloudflare.com/pages/get-started/c3/) (the `create-cloudflare` CLI):
+## Website Features
 
-```bash
-npm create cloudflare@latest -- --template=cloudflare/templates/next-starter-template
+- **Homepage**: Features Peter Anderson's expertise and notable case results
+- **About Page**: Detailed professional background, education, and experience
+- **Practice Areas**: Specialized in medical malpractice, FTCA claims, and nursing home abuse
+- **Articles**: Educational content about medical malpractice law
+- **Contact Page**: Easy contact form and consultation information
+
+## Notable Case Results
+
+- DC Birth Injury Case: $6.5 Million
+- VA Nursing Home Case: $500,000 (created new precedent)
+- FTCA Prostate Cancer Case: $900,000
+- FTCA Sepsis Case: $1.5 Million
+
+## Adding Images
+
+### Peter Anderson Headshot
+
+1. **Location**: Add Peter's professional headshot to `/public/images/`
+2. **Recommended filename**: `peter-anderson-headshot.jpg` or `peter-anderson-headshot.png`
+3. **Recommended size**: 400x400 pixels minimum (square format works best)
+4. **Quality**: High-resolution professional photo
+
+### Where to Add the Headshot
+
+The headshot placeholder is currently in these locations:
+- Homepage: Featured attorney section
+- About page: Attorney profile section
+
+To add the actual image, replace the placeholder divs with:
+
+```jsx
+<Image
+  src="/images/peter-anderson-headshot.jpg"
+  alt="Peter Anderson - Medical Malpractice Attorney"
+  width={400}
+  height={400}
+  className="rounded-lg"
+/>
 ```
 
-A live public deployment of this template is available at [https://next-starter-template.templates.workers.dev](https://next-starter-template.templates.workers.dev)
+### Additional Images
 
-## Getting Started
+You can add additional images to `/public/images/` for:
+- Office photos
+- Courtroom images
+- Professional awards or certificates
+- Team photos (if applicable)
 
-First, run:
+## Technical Details
+
+- Built with Next.js 14
+- Styled with Tailwind CSS
+- Responsive design
+- SEO optimized
+
+## Running the Website
 
 ```bash
 npm install
-# or
-yarn install
-# or
-pnpm install
-# or
-bun install
-```
-
-Then run the development server (using the package manager of your choice):
-
-```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The website will be available at `http://localhost:3000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The website is configured for deployment on various platforms. Update the deployment settings as needed for your hosting provider.
 
-## Deploying To Production
+## Content Updates
 
-| Command                           | Action                                       |
-| :-------------------------------- | :------------------------------------------- |
-| `npm run build`                   | Build your production site                   |
-| `npm run preview`                 | Preview your build locally, before deploying |
-| `npm run build && npm run deploy` | Deploy your production site to Cloudflare    |
+All content has been updated to reflect Peter Anderson's real:
+- Professional experience
+- Education background
+- Case results
+- Practice areas
+- Contact information
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The website now accurately represents Peter's expertise in medical malpractice, FTCA claims, and nursing home abuse cases.

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 interface RootLayoutProps {
-  children: JSX.Element | JSX.Element[];
+  children: React.ReactNode;
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
