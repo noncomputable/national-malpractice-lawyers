@@ -258,7 +258,7 @@ export default function About() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Notable Case Results</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Real results that make a difference in clients' lives</p>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Real results that make a difference in clients&apos; lives</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
