@@ -180,7 +180,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Why Choose Peter Anderson</h2>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto">Proven results and dedicated representation for medical malpractice victims</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
                 title: "Experience",
@@ -193,17 +193,27 @@ export default function Home() {
               {
                 title: "Expertise",
                 description: "Specialized in medical malpractice and FTCA claims"
-              },
-              {
-                title: "Accessibility",
-                description: "Email: peter@nationalmalpracticelawyers.com"
               }
             ].map((feature, index) => (
-              <div key={index} className="text-center bg-white/10 backdrop-blur-sm p-8 rounded-2xl hover:bg-white/20 transition-all duration-300">
+              <div key={index} className="text-center bg-white/10 backdrop-blur-sm p-6 md:p-8 rounded-2xl hover:bg-white/20 transition-all duration-300">
                 <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
                 <p className="text-blue-100">{feature.description}</p>
               </div>
             ))}
+          </div>
+          
+          {/* Accessibility Section - Full Width */}
+          <div className="mt-8 max-w-5xl mx-auto">
+            <div className="text-center bg-white/10 backdrop-blur-sm p-6 md:p-8 rounded-2xl hover:bg-white/20 transition-all duration-300">
+              <h3 className="text-xl font-bold mb-4">Accessibility</h3>
+              <div className="text-blue-100 text-xs md:text-sm">
+                <span>Email: </span>
+                <br />
+                <a href="mailto:peter@nationalmalpracticelawyers.com" className="text-white hover:text-blue-200 underline break-all inline-block max-w-full">
+                  peter@nationalmalpracticelawyers.com
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -252,8 +262,13 @@ export default function Home() {
       <section className="py-24 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">Ready to Discuss Your Case?</h2>
-          <p className="text-xl text-blue-100 mb-12 max-w-3xl mx-auto">
-            Contact Peter Anderson today for a free consultation. Email is the best way to reach him: peter@nationalmalpracticelawyers.com
+          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            Contact Peter Anderson today for a free consultation. Email is the best way to reach him:
+          </p>
+          <p className="text-lg text-blue-100 mb-12 break-all">
+            <a href="mailto:peter@nationalmalpracticelawyers.com" className="text-white hover:text-blue-200 underline">
+              peter@nationalmalpracticelawyers.com
+            </a>
           </p>
           <a
             href="/contact"

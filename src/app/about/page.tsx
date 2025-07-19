@@ -120,15 +120,18 @@ export default function About() {
                   His experience includes complex birth injury cases, nursing home negligence, surgical errors, 
                   and diagnostic failures.
                 </p>
-                <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-8 rounded-2xl border border-blue-200">
+                <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-6 rounded-2xl border border-blue-200">
                   <h3 className="text-xl font-bold mb-4 text-gray-900">Contact Information</h3>
-                  <p className="text-gray-700 mb-3 text-lg">
-                    <strong>Email:</strong> peter@nationalmalpracticelawyers.com
+                  <p className="text-gray-700 mb-3 text-base break-all">
+                    <strong>Email:</strong><br />
+                    <a href="mailto:peter@nationalmalpracticelawyers.com" className="text-blue-600 hover:text-blue-800">
+                      peter@nationalmalpracticelawyers.com
+                    </a>
                   </p>
-                  <p className="text-gray-700 mb-3 text-lg">
+                  <p className="text-gray-700 mb-3 text-base">
                     <strong>Firm:</strong> National Malpractice Lawyers
                   </p>
-                  <p className="text-gray-700 text-lg">
+                  <p className="text-gray-700 text-base">
                     <strong>Practice:</strong> Nationwide medical malpractice cases
                   </p>
                 </div>
@@ -152,33 +155,29 @@ export default function About() {
       {/* Office Environment */}
       <section className="py-24 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Our Office Environment</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Professional facilities designed for client comfort and confidentiality</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="w-full h-64 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 max-w-6xl mx-auto">
+            <div className="w-full h-48 md:h-64 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <Image
                 src="/images/office/offer-exterior.jpg"
-                alt="Office Environment"
+                alt="Office Exterior"
                 width={400}
                 height={256}
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="w-full h-64 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <div className="w-full h-48 md:h-64 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <Image
                 src="/images/office/conference-room.jpg"
-                alt="Office Environment"
+                alt="Conference Room"
                 width={400}
                 height={256}
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="w-full h-64 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <div className="w-full h-48 md:h-64 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <Image
                 src="/images/office/reception-area.jpg"
-                alt="Office Environment"
+                alt="Reception Area"
                 width={400}
                 height={256}
                 className="w-full h-full object-cover"
@@ -291,7 +290,12 @@ export default function About() {
           <h2 className="text-4xl md:text-5xl font-bold mb-8">Ready to Discuss Your Case?</h2>
           <p className="text-xl text-blue-100 mb-12 max-w-3xl mx-auto">
             Contact Peter Anderson today for a free, confidential consultation. 
-            Email is the best way to reach him: peter@nationalmalpracticelawyers.com
+            Email is the best way to reach him:
+          </p>
+          <p className="text-lg text-blue-100 mb-8 break-all">
+            <a href="mailto:peter@nationalmalpracticelawyers.com" className="text-white hover:text-blue-200 underline">
+              peter@nationalmalpracticelawyers.com
+            </a>
           </p>
           <a
             href="/contact"
